@@ -12,22 +12,22 @@
     <meta name="keywords" content="absen, laboratorium, sistem absen, kehadiran, aplikasi, labor, admin, dashboard" />
     <meta name="author" content="Labor Admin" />
     <!-- v4.1.3 -->
-    <link rel="stylesheet" href="{{ url('dist/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('dist/img/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon-16x16.png') }}">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ public_path('dist/css/style.css') }}">
-    <link rel="stylesheet" href="{{ public_path('dist/css/font-awesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ public_path('dist/css/et-line-font/et-line-font.css') }}">
-    <link rel="stylesheet" href="{{ public_path('dist/css/themify-icons/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ public_path('dist/css/simple-lineicon/simple-line-icons.css') }}">
-    <link rel="stylesheet" href="{{ public_path('dist/css/skins/_all-skins.min.css') }}">
-    <link rel="stylesheet" href="{{ public_path('dist/plugins/datatables/css/dataTables.bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/et-line-font/et-line-font.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/simple-lineicon/simple-line-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/skins/_all-skins.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/datatables/css/dataTables.bootstrap.min.css') }}">
 
 </head>
 
@@ -37,9 +37,9 @@
             <!-- Logo -->
             <a href="index.html" class="logo blue-bg">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><img src="dist/img/logo-small.png" alt=""></span>
+                <span class="logo-mini"><img src="assets/img/logo-small.png" alt=""></span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><img src="dist/img/logo.png" alt=""></span> </a>
+                <span class="logo-lg"><img src="assets/img/logo.png" alt=""></span> </a>
             <!-- Header Navbar -->
             <nav class="navbar blue-bg navbar-static-top">
                 <!-- Sidebar toggle button-->
@@ -69,7 +69,7 @@
             <div class="sidebar">
                 <div class="user-panel">
                     <div class="image text-center">
-                        <img src="dist/img/img1.jpg" class="img-circle" alt="User Image">
+                        <img src="assets/img/img1.jpg" class="img-circle" alt="User Image">
                     </div>
                     <div class="info">
                         <p>{{ Auth::user()->name }}</p>
@@ -145,17 +145,17 @@
     <!-- ./wrapper -->
 
     <!-- jQuery 3 -->
-    <script src="{{ asset('dist/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('dist/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
 
     <!-- template -->
-    <script src="{{ asset('dist/js/bizadmin.js') }}"></script>
+    <script src="{{ asset('assets/js/bizadmin.js') }}"></script>
 
     <!-- for demo purposes -->
-    <script src="{{ asset('dist/js/demo.js') }}"></script>
+    <script src="{{ asset('assets/js/demo.js') }}"></script>
 
-    <script src="{{ asset('dist/plugins/datatables/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('dist/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
     <script>
         $(document).ready(function () {
             $('#example1').DataTable();
